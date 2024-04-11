@@ -8,7 +8,6 @@ This is a web application that allows users to calculate their taxes based on th
 - Tax calculation based on specified rules.
 - Error handling for invalid inputs.
 - Display of tax calculation results in a modal window.
-- ...
 
 ## Technologies Used
 
@@ -50,7 +49,7 @@ Overall Income = ₹12,70,000 - ₹1,88,000
                = ₹10,82,000
 
 ![Screenshot](./Users/mohit/Downloads/tax_modal1.png)
-
+![Screenshot](./Users/mohit/Downloads/tax_calculator1.png)
 
 ## Hosted Web App
 
