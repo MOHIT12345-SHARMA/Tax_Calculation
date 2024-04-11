@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       
+        <form id="incomeForm">
+        
+            <div class="wrapper1">
+                <label for="gross-income" class="tooltip tooltip1">Enter gross annual income <span class="tooltiptext1">&#63</span> </label>
+                <input type="number" id="gross-income" name="gross-income" placeholder ="Enter gross annual income" inputmode="numeric" required >
+                <span class="exclamation">&#x21;</span>
+            </div>
+                
+              
+           
+            
+            <label for="extra-income" class="tooltip tooltip2">Enter extra income <span class="tooltiptext2">&#63</span> </label>
+            <input type="number" id="extra-income" name="extra-income" placeholder = "Enter extra income from other sources">
+            <label for="age-group" class="tooltip tooltip3">Enter age group: <span class="tooltiptext3">&#63</span>
+              <select id="age" name="age" required>
+                	<option default></option>
+                    <option value="<40">&lt; 40</option>
+                    <option value=">=40&<60">&ge; 40 &amp; &lt; 60</option>
+                    <option value=">=60">&ge; 60</option>
+                </select>
+              </label>
+           <label for="deductions" class="tooltip tooltip4">Enter total applicable deductions <span class="tooltiptext4">&#63</span> </label>
+            <input type="number" id="deductions" name="deductions" placeholder="Add total applicable deductions">
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+              
+        <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Tax Calculation Result</h2>
+            <p id="taxResult"></p>
+            <button class="close">Close</button>
+        </div>
+    </div>
+              
+    <script src="./script.js"></script>
+</body>
+</html>

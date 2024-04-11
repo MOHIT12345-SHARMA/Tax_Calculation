@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #f0f0f0;
+
+    
+  }
+  .container {
+      max-width: 600px;
+      position: relative;
+      margin: 8rem auto;
+      padding: 50px 50px 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-width: 2px;
+      border-style: solid;
+        
+        border-color: #b4b4b4;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    
+  }
+  span{
+    color: #b4b4b4;
+    border: 2px solid #b4b4b4;
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 50%;
+  }
+  span:hover{
+    cursor: pointer;
+  }
+  .tooltip{
+     position: relative;
+  }
+  .tooltip1:after {
+    content: "";
+    position:absolute;
+    
+   
+    left:40.5%;
+    margin-left:5px;
+   
+   
+    bottom:68%;
+    transform:translateY(-50%);
+    rotate: 270deg;
+   
+    border:8px solid #000;
+    border-color: transparent #3c3c3c transparent transparent;
+    display: none;
+    
+  }
+  .tooltip1:hover:before, .tooltip1:hover:after {
+    display:block;
+  }
+  .tooltip .tooltiptext1:before{
+    content: 'Gross annual income is your total salary in a year before any      deduction';
+    visibility: hidden;
+    position: absolute;
+    bottom: 2.1rem;
+    left: 12rem;
+    width: 120px;
+    padding: 10px 15px;
+    word-wrap: break-word;
+    background-color: #3c3c3c;
+    color: white;
+  
+  }
+  
+  .tooltip:hover .tooltiptext1:before {
+    visibility: visible;
+    transition: tooltiptext 2.5s ease;
+  }
+  /*  tooltip 2 styling */
+  .tooltip2 .tooltiptext2:before{
+    content: 'Mention your other source of income that you do not earn through job';
+    visibility: hidden;
+    position: absolute;
+    bottom: 2.1rem;
+    left: 8rem;
+    width: 120px;
+    padding: 10px 15px;
+    word-wrap: break-word;
+    background-color: #3c3c3c;
+    color: white;
+  }
+  .tooltip2:hover .tooltiptext2:before {
+    visibility: visible;
+    transition: tooltiptext 2.5s ease;
+  }
+  .tooltip2:after {
+    content: "";
+    position:absolute;
+    
+    /* position tooltip correctly */
+    left:29.5%;
+    margin-left:5px;
+   
+    /* vertically center */
+    bottom:68%;
+    transform:translateY(-50%);
+    rotate: 270deg;
+    /* the arrow */
+    border:8px solid #000;
+    border-color: transparent #3c3c3c transparent transparent;
+    display:none;
+  }
+  .tooltip2:hover:before, .tooltip2:hover:after {
+    display:block;
+  }
+  
+  /* tooltip 3 styling */
+  
+  
+  
+  .tooltip3 .tooltiptext3:before{
+    content: 'Enter your relevant age group';
+    visibility: hidden;
+    position: absolute;
+    bottom: 4.8rem;
+    left: 6rem;
+    width: 120px;
+    padding: 10px 15px;
+    word-wrap: break-word;
+    background-color: #3c3c3c;
+    color: white;
+  }
+  .tooltip3:hover .tooltiptext3:before {
+    visibility: visible;
+    transition: tooltiptext 2.5s ease;
+  }
+  .tooltip3:after {
+    content: "";
+    position:absolute;
+    
+    /* position tooltip correctly */
+    left:26%;
+    margin-left:5px;
+   
+    /* vertically center */
+    top: -8%;
+    transform:translateY(-50%);
+    rotate: 270deg;
+    /* the arrow */
+    border:8px solid #000;
+    border-color: transparent #3c3c3c transparent transparent;
+    display: none;
+   
+  }
+  .tooltip3:hover:before, .tooltip3:hover:after {
+    display:block;
+  }
+  
+  /* tooltip 4 styling */
+  
+  
+  
+  .tooltip4 .tooltiptext4:before{
+    content: 'Enter your all apply deductions';
+    visibility: hidden;
+    position: absolute;
+    bottom: 2.1rem;
+    left: 14rem;
+    width: 120px;
+    padding: 10px 15px;
+    word-wrap: break-word;
+    background-color: #3c3c3c;
+    color: white;
+  }
+  .tooltip4:hover .tooltiptext4:before {
+    visibility: visible;
+    transition: tooltiptext 2.5s ease;
+  }
+  .tooltip4:after {
+    content: "";
+    position:absolute;
+    
+    /* position tooltip correctly */
+    left: 50%;
+    margin-left:5px;
+   
+    /* vertically center */
+    top: -27%;
+    transform:translateY(-50%);
+    rotate: 270deg;
+    /* the arrow */
+    border:8px solid #000;
+    border-color: transparent #3c3c3c transparent transparent;
+    display: none;
+   
+  }
+  .tooltip4:hover:before, .tooltip4:hover:after {
+    display:block;
+  }
+  
+  form {
+      margin-top: 20px;
+  }
+ label {
+      display: block;
+       margin-bottom: -20px;
+  }
+.wrapper1{
+    position: relative;
+}
+  .exclamation {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    padding: 0px 8px;
+  }
+  .exclamation::before{
+    content: 'Please enter numbers only';
+    position: absolute;
+    visibility: hidden;
+    bottom: 1.85rem;
+    left: -1rem;
+    width: 192px;
+    padding: 10px 15px;
+    word-wrap: break-word;
+    border-radius: 5px;
+    background-color: #3c3c3c;
+    color: white;
+  }
+  .exclamation:hover::before {
+    visibility: visible;
+  }
+  .exclamation::after{
+    content: "";
+    position:absolute;
+    
+    /* position tooltip correctly */
+    left:49%;
+   
+   
+    /* vertically center */
+    bottom: 64%;
+    transform:translateY(-50%);
+    rotate: 270deg;
+    /* the arrow */
+    border:8px solid #000;
+    border-color: transparent #3c3c3c transparent transparent;
+    display: none;
+  
+  }
+  .exclamation:hover::after{
+    display: block;
+  }
+  label:nth-of-type(3){
+    margin-top: 10px;
+  }
+  input{
+      width: 100%;
+      padding: 10px;
+        font-size: 1rem;
+      
+      border: 1px solid #ccc;
+      
+    outline: none;
+      border-radius: 4px;
+  }
+  input::placeholder{
+    color: #b4b4b4;
+  }
+  select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  button#submit {
+      background-color: #6558f5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+        width: 100%;
+        margin-top: 20px;
+      border-radius: 4px;
+      cursor: pointer;
+        font-size: 1.2rem;
+  }
+  button:hover {
+      background-color: #7871ff
+  }
+
+  /* show pop up */
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0%;
+    top: 9%;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+     /* Black w/ opacity */
+    padding-top: 60px; /* Place content 60px from the top */
+   
+    
+}
+
+.modal-content {
+    background-color: #fefefe;
+    color: #3f3f3f;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 2px solid #b4b4b4;
+    width: 750px; /* Could be more or less, depending on screen size */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    font-family: "IBM Plex Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+
+}
+.modal-content h1{
+    font-weight: 400;
+}
+/* Close button */
+.close {
+    background-color: #6558f5;
+    color: white;
+    float: right;
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin-top: 3rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.modal-content p{
+    font-size: 1.5rem;
+    color: #3f3f3f;
+}
+.close:hover,
+.close:focus {
+   
+    text-decoration: none;
+    cursor: pointer;
+}
