@@ -53,5 +53,5 @@ Overall Income = ₹12,70,000 - ₹1,88,000
 
 ## Hosted Web App
 
-You can access the hosted web app [here][(link_to_hosted_web_app).](https://6618220ea3d77a08f6bd0ffa--monumental-pithivier-6cc088.netlify.app/)
+You can access the hosted web app:- https://6618220ea3d77a08f6bd0ffa--monumental-pithivier-6cc088.netlify.app/
 
