@@ -49,7 +49,7 @@ Overall Income = Taxable Income - Tax Amount
 Overall Income = ₹12,70,000 - ₹1,88,000
                = ₹10,82,000
 
-![Screenshot](./Downloads/tax_modal1.png)
+![Screenshot](./Users/mohit/Downloads/tax_modal1.png)
 
 
 ## Hosted Web App
